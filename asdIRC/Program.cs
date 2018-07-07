@@ -114,7 +114,7 @@ namespace asdIRC
         static void Init()
         {
             InitTitle();
-            Console.WriteLine(string.Format("{0} Version:{1}", ProgramName, ProgramVersion));
+            Console.WriteLine(string.Format("{0} Version: b{1}", ProgramName, ProgramVersion));
         }
         static string GetFullVersion(Version ver)
         {
@@ -237,7 +237,7 @@ namespace asdIRC
                 }
                 switch (command)
                 {
-                    case "VERIFY":
+                    case "TEST":
                         if (!string.IsNullOrEmpty(text))
                         {
                             SendMessage(target, "Testing...");
